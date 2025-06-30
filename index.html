@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio-03</title>
+    <title>Desafio-04</title>
 </head>
 <body>
     <h1>Olá, mundo!</h1>
-    <input>
+    <input placeholder="Escreva e clique no botão">
+    <button onclick="showinput()">Alerta input</button>
+    <script>
+        function showinput() {
+            const input = document.querySelector("input")
+            alert(input.value)
+        }
+    </script>
 </body>
 </html>
